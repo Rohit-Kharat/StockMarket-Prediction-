@@ -31,9 +31,7 @@
     
     <div class="hero-section">
         <div class="simg">
-            <!-- <div class="fimg">
-                <img src="infoimg.png" alt="" width="50%" style="margin: 30px;" height="700vh">
-            </div> -->
+          
             <div class="line"></div>
             <div class="info">
                 <span>Let’s build from here</span>
@@ -145,12 +143,12 @@
           const container = document.getElementById('registration-container');
           
           if (container.classList.contains('active')) {
-              // If the container is already active, remove the content and hide it
+              
               container.classList.remove('active');
               container.innerHTML = '';
            } 
            else {
-              // If the container is not active, load the content and show it
+              
               fetch('register.html')
                   .then(response => response.text())
                   .then(data => {
@@ -167,12 +165,12 @@
           const container = document.getElementById('login-container');
           
           if (container.classList.contains('active')) {
-              // If the container is already active, remove the content and hide it
+              
               container.classList.remove('active');
               container.innerHTML = '';
            } 
            else {
-              // If the container is not active, load the content and show it
+              
               fetch('login.html')
                   .then(response => response.text())
                   .then(data => {
