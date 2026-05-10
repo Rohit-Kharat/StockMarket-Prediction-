@@ -31,9 +31,7 @@ def get_stock_suggestions():
         data = json.load(file)
     return data
 
-# @app.route("/")
-# def hom():
-#     return home()
+
 
 
 @app.route("/home", methods=["GET", "POST"])
