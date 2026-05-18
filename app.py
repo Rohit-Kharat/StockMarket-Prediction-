@@ -217,7 +217,7 @@ def FuturePrediction():
 
     graph_html = fig_graph.to_html(full_html=False, include_plotlyjs='cdn')
 
-    # Create interactive table
+    
     table_trace = go.Table(
         header=dict(values=["Date", "Predicted Price"], fill_color='paleturquoise', align='left'),
         cells=dict(values=[predicted_prices_df.index.date, predicted_prices_df['Predicted Price']],
